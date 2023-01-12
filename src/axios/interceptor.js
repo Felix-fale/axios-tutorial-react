@@ -1,0 +1,10 @@
+import axios from "axios";
+
+const authFetch = axios.create({
+  baseURL: "https://course-api.com/",
+  
+});
+
+authFetch.interceptors.request.use(()=>{}, ()=>{})
+
+export default authFetch;
